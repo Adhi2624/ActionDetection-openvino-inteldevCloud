@@ -1,7 +1,6 @@
 <div align="center">
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
-<br>ACTIONDETECTION-OPENVINO-INTELDEVCLOUD</h1>
+<br>ACTION DETECTION-OPENVINO-INTELDEVCLOUD</h1>
 
 </div>
 
@@ -10,7 +9,7 @@
 ## 📖 Table of Contents
 - [📍Project overview](#-overview)
 - [📍What is oneapi](#-features)
-- [📍InteldevCloud](#-inteldevCloud)
+- [📍IntelDevCloud](#-inteldevCloud)
 - [📍OPENVINO](#modules)
 - [📍Repository Structure](#-repository-structure)
 - [🚀 Getting Started](#-getting-started)
@@ -34,7 +33,7 @@ Our commitment to ongoing improvements and the exploration of different framewor
 
 ---
 
-## 📍 what is oneapi
+## 📍 What is Oneapi
 
    OneAPI is an open, standards-based, cross-architecture programming model developed by the oneAPI consortium, which is led by Intel. This initiative aims to simplify the development of high-performance, heterogeneous applications that can run on a variety of hardware architectures, including CPUs, GPUs, FPGAs, and other accelerators. It's designed to address the challenges of modern computing, where hardware diversity is increasing, and software needs to be optimized for different types of processors.
 
@@ -45,7 +44,7 @@ Our commitment to ongoing improvements and the exploration of different framewor
 
 ---
 
-## 📍inteldevCloud
+## 📍IntelDevCloud
 
 Intel DevCloud for oneAPI is a cloud-based development platform provided by Intel that allows developers to access a diverse range of Intel hardware architectures for testing and optimizing their software applications using the oneAPI programming model. This cloud-based environment is particularly useful for those who want to explore the capabilities of oneAPI, but may not have access to the required hardware locally or want to leverage the cloud's scalability and flexibility.
 
