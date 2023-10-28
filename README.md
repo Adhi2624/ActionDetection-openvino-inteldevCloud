@@ -32,10 +32,10 @@ Our commitment to ongoing improvements and the exploration of different framewor
 
 ---
 
-## 📍Project flow
-    In this project, we initially trained and executed our model without leveraging Intel's optimized libraries and the oneAPI toolkit. While our accuracy was commendable, our system's efficiency left room for improvement.Upon integrating the Intel-optimized TensorFlow model and executing it using OpenVINO IR models, we achieved the same level of accuracy while drastically improving efficiency. This optimization reduced runtime and effectively optimized the hardware load during training.An integral part of Completing this project is the use of the Intel oneAPI cloud, which offered a fast and well-optimized environment for our project. We trained our model using approximately 9000 videos, each comprising 25 frames, and the cloud infrastructure proved to be both efficient and responsive.Furthermore, Intel's optimized version of the scikit-learn library (scikit-learn-intelx) played a role in our project which is used it efficiently split our dataset into training and testing data."
-    
+## 📍Project Flow
+<p>      In this project, we initially trained and executed our model without leveraging Intel's optimized libraries and the oneAPI toolkit. While our accuracy was commendable, our system's efficiency left room for improvement.Upon integrating the Intel-optimized TensorFlow model and executing it using OpenVINO IR models, we achieved the same level of accuracy while drastically improving efficiency. This optimization reduced runtime and effectively optimized the hardware load during training.An integral part of Completing this project is the use of the Intel oneAPI cloud, which offered a fast and well-optimized environment for our project. We trained our model using approximately 9000 videos, each comprising 25 frames, and the cloud infrastructure proved to be both efficient and responsive.Furthermore, Intel's optimized version of the scikit-learn library (scikit-learn-intelx) played a role in our project which is used it efficiently split our dataset into training and testing data</p>
 ---
+
 ## 📍 What is OneAPI
 
    OneAPI is an open, standards-based, cross-architecture programming model developed by the oneAPI consortium, which is led by Intel. This initiative aims to simplify the development of high-performance, heterogeneous applications that can run on a variety of hardware architectures, including CPUs, GPUs, FPGAs, and other accelerators. It's designed to address the challenges of modern computing, where hardware diversity is increasing, and software needs to be optimized for different types of processors.
