@@ -11,11 +11,12 @@
 - [📍What is oneapi](#-features)
 - [📍IntelDevCloud](#-inteldevCloud)
 - [📍OPENVINO](#modules)
+- [📍Runtime execution](#-Runtime-execution)
 - [📍Repository Structure](#-repository-structure)
 - [🚀 Getting Started](#-getting-started)
     - [🔧 Installation](#-installation)
     - [🤖 Running ActionDetection-openvino-inteldevCloud](#-running-ActionDetection-openvino-inteldevCloud)
-- [📍Runtime execution](#-Runtime-execution)
+
 
 ---
 
@@ -29,10 +30,11 @@ One notable aspect of our project is the evaluation of runtime execution. We tes
 
 Our commitment to ongoing improvements and the exploration of different frameworks allows us to continually enhance the project's capabilities and offer an effective solution for human activity recognition.
 
-
-
 ---
 
+## 📍Project overview
+    In this project, we initially trained and executed our model without leveraging Intel's optimized libraries and the oneAPI toolkit. While our accuracy was commendable, our system's efficiency left room for improvement.Upon integrating the Intel-optimized TensorFlow model and executing it using OpenVINO IR models, we achieved the same level of accuracy while drastically improving efficiency. This optimization reduced runtime and effectively optimized the hardware load during training.An integral part of Completing this project is the use of the Intel oneAPI cloud, which offered a fast and well-optimized environment for our project. We trained our model using approximately 9000 videos, each comprising 25 frames, and the cloud infrastructure proved to be both efficient and responsive.Furthermore, Intel's optimized version of the scikit-learn library (scikit-learn-intelx) played a role in our project which is used it efficiently split our dataset into training and testing data." 
+____
 ## 📍 What is OneAPI
 
    OneAPI is an open, standards-based, cross-architecture programming model developed by the oneAPI consortium, which is led by Intel. This initiative aims to simplify the development of high-performance, heterogeneous applications that can run on a variety of hardware architectures, including CPUs, GPUs, FPGAs, and other accelerators. It's designed to address the challenges of modern computing, where hardware diversity is increasing, and software needs to be optimized for different types of processors.
@@ -58,6 +60,21 @@ Intel® DevCloud for oneAPI is a cloud-based development platform provided by In
 The OpenVINO™ toolkit enables you to optimize a deep learning model from almost any framework and deploy it with best-in-class performance on a range of Intel® processors and other hardware platforms.It is an open-source toolkit developed by Intel that helps accelerate the deployment of computer vision and various ML,DL libraires(Tensorflow and PyTorch) on various Intel hardware platforms. It is designed to optimize and run neural network models with high performance and efficiency, making it an essential tool for developers working on applications such as object detection, image segmentation, facial recognition, and more.
 
 <a href='https://docs.openvino.ai/2023.0/openvino_docs_install_guides_overview.html?ENVIRONMENT=DEV_TOOLS&OP_SYSTEM=WINDOWS&VERSION=v_2023_0_2&DISTRIBUTION=PIP'>🔗Getting started with OPENVINO</a>
+
+---
+### 📍Runtime execution
+
+   Upon testing both the TensorFlow model and the OpenVINO IR model using the same test data, it was observed that the OpenVINO model outperformed TensorFlow in terms of runtime execution. The OpenVINO model exhibited notably superior performance, completing the task in significantly less time, demonstrating its efficiency for real-time execution
+
+<h4>Tensorflow runtime= 81.01sec</h4>
+
+<img src='https://drive.google.com/uc?export=view&id=1uO8T1vJbHx9n1_U3YXKHFBahq0qHuORF' alt='Tensorflowruntime.png'/>
+
+<h4>OPENVINO IR runtime = 45.24Sec</h4>
+<img src='https://drive.google.com/uc?export=view&id=1pFT8bcOLWCKLOrw5nq0bMk4ISoTfdVeT' alt='opevinoIRruntime.png'/>
+
+
+
 
 ---
 
@@ -134,20 +151,7 @@ jupyter nbconvert --execute notebook.ipynb
 ```
 ---
 
-### 📍Runtime execution
 
-   Upon testing both the TensorFlow model and the OpenVINO IR model using the same test data, it was observed that the OpenVINO model outperformed TensorFlow in terms of runtime execution. The OpenVINO model exhibited notably superior performance, completing the task in significantly less time, demonstrating its efficiency for real-time execution
-
-<h3>Tensorflow runtime= 81.01sec</h3>
-![Tensorflow runtime](https://drive.google.com/uc?export=view&id=1uO8T1vJbHx9n1_U3YXKHFBahq0qHuORF)
-
-<h3>OPENVINO IR runtime = 45.24Sec</h3>
-![opevino runtime](https://drive.google.com/uc?export=view&id=1pFT8bcOLWCKLOrw5nq0bMk4ISoTfdVeT)
-
-
-
-
----
 
 
 
